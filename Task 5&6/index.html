@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            width: 100vw;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        .navLi {
+            font-size: 2vh;
+            padding: 2vh;
+        }
+
+        .brand {
+            background-color: #fff;
+            width: 20vw;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1vh 5vw;
+            border-radius: 10px;
+        }
+
+        .footerDesBtn {
+            border: 2px solid white;
+            border-radius: 20px;
+            padding: 1vh 1vw;
+            font-size: small;
+            margin: 8px 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- Navbar -->
+        <div class="flex flex-row justify-between md:justify-evenly h-[10vh] w-full md:w-[70vw] mx-auto">
+            <div class="navLi"><i class="fa-solid fa-bars  text-4xl font-semibold"></i></div>
+            <div class="md:my-6 md:ml-10">
+                <img src="https://statics.radissonhotels.com/main/img/logo/radisson/rhg-logotype.svg"
+                    class="w-[20vw]  md:block hidden" alt="">
+                <img src="https://statics.radissonhotels.com/main/img/logo/radisson/rhg-imagotype.svg"
+                    class="w-[10vw] h-[10vh] block md:hidden" alt="">
+            </div>
+
+            <div class="w-[60%] mx-10 py-2  md:block hidden">
+                <ul class="flex flex-row justify-center item-center ">
+                    <li class="navLi">Destination</li>
+                    <li class="navLi">Resorts</li>
+                    <li class="navLi">Meetings&Events</li>
+                    <li class="navLi">Deals</li>
+                    <li class="navLi">Dining</li>
+                    <i class="fa-solid fa-angle-down navLi"></i>
+                </ul>
+            </div>
+
+            <div class="flex justify-center mt-6">
+                
+                <div class="flex flex-row justify-center items-center border border-black border-4 rounded-full p-2 h-10 mx-4 md:block hidden w-[200px]">
+                        <i class="fa-solid fa-globe mx-2"></i>
+                        <span>English</span>
+                        <span class="mx-1">|</span>
+                        <i class="fa-solid fa-coins mx-2"></i>
+                        <span>INR</span>
+                </div>
+
+                <div class="flex justify-center p-2 px-4 h-10 md:text-white md:bg-black rounded-full"><i
+                        class="fa-regular fa-user mx-2"></i><span class="md:block hidden">SIGNIN</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search -->
+    <div class="bg-[#29343D] h-[12vh] flex justify-center py-5">
+        <div class="md:w-[70%] bg-white border md:rounded-lg rounded-[40px] px-12 flex flex-row ">
+
+            <div class="flex flex-row md:border-r-2 md:w-[45%] items-center ">
+                <div class="p-2 hidden md:block">
+                    <i class="fa-solid fa-location-dot p-2"></i>
+                </div>
+                <form class="flex flex-col">
+                    <label for="search" class="md:opacity-70">Choose your next adventure</label>
+                    <input type="text" placeholder="Destination or hotel" class="hidden md:block">
+                </form>
+            </div>
+
+            <div class="flex w-[45%] border-r-1">
+
+                <div class="flex flex-row w-[40%] items-center mx-2">
+                    <div class="p-3 text-2xl">
+                        <i class="fa-regular fa-calendar"></i>
+                    </div>
+                    <form class="flex flex-col">
+                        <label for="search" class="opacity-70">Check-in</label>
+                        <input type="text" placeholder="Thu 22 Jan">
+                    </form>
+                    <div class="-ml-30 "> <i class="fa-solid fa-angle-down"></i></div>
+                </div>
+
+                <div class="flex flex-row w-[40%] items-center mx-2">
+                    <div class="p-3 text-2xl">
+                        <i class="fa-regular fa-calendar"></i>
+                    </div>
+                    <form class="flex flex-col">
+                        <label for="search" class="opacity-70">Check-in</label>
+                        <input type="text" placeholder="Thu 22 Jan">
+                    </form>
+                    <div class="-ml-30 ">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="py-2 px-2 md:w-[20%]">
+
+                <button class="bg-red-700 flex flex-row md:px-14 py-2 text-white text-2xl  rounded-full">
+                    <i class="fa-solid fa-magnifying-glass mx-2 mt-1"></i>
+                    <p class="hidden md:block">SEARCH</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div
+        class="w-full h-[70vh] bg-[url('https://media.radissonhotels.net/image/radisson-collection-hotel-spa-riverfront-srinagar/promotional/16256-126774-m37667961.png?impolicy=HomeHero')] bg-cover bg-no-repeat bg-center flex justify-center text-white items-center opacity-90">
+        <div class="md:w-[30vw]">
+
+            <div class="flex justify-center mb-2 ">
+                <h2 class="md:text-6xl text-4xl">Beyond Ordinary</h2>
+            </div>
+            <div class="flex justify-center  mb-4">
+                <h2 class="md:text-6xl text-4xl">Escapes</h2>
+            </div>
+
+            <div class="flex justify-center my-2 px-10">
+                Radisson Collection Hotel & Spa, Riverfront Srinagar - a refined retreat of riverfront serenity,
+                Himalayan beauty, and authentic Kashmiri warmth.
+            </div>
+
+            <div class="flex justify-center">
+
+                <button class="bg-red-700 rounded-full py-4 px-10">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="p-10 md:px-[15vw]">
+        <div class="flex justify-between my-2 mb-6">
+            <h1 class="text-4xl">Popular destinations</h1>
+            <button class=" rounded-full border border-2 p-2 px-6">SEE MORE</button>
+        </div>
+
+        <div class="rounded-md flex flex-row pr-30 h-[40vh]">
+            <div class="relative mx-2">
+                <img src="https://media.radissonhotels.net/image/destination-pages-south-asia/promotional/16256-171090-m35006950.png?impolicy=SecondGalleryImg"
+                    class="rounded-md h-[100%] bg-no-repeat w-[25vw]" alt="">
+                <p class="absolute top-70 left-10 text-2xl bg-white rounded-full px-5 py-2 "> New Delhi</p>
+            </div>
+            <div class="relative mx-2">
+                <img src="https://media.radissonhotels.net/image/destination-pages--south-asia/promotional/16256-171090-f81571189_3xl.jpg?impolicy=SecondGalleryImg"
+                    class="rounded-md h-[100%] bg-no-repeat w-[25vw]" alt="">
+                <p class="absolute top-70 left-10 text-2xl bg-white rounded-full px-5 py-2"> New Delhi</p>
+            </div>
+            <div class="relative mx-2">
+                <img src="https://media.radissonhotels.net/image/destination-pages-do-not-add-new-content/local-attraction/16256-118729-f63251403_3XL.jpg?impolicy=SecondGalleryImg"
+                    class="rounded-md h-[100%] bg-no-repeat w-[25vw]" alt="">
+                <p class="absolute top-70 left-10 text-2xl bg-white rounded-full px-5 py-2"> New Delhi</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center my-20 px-[15vw]">
+
+        <div class="mx-3 w-[45%]"><img
+                src="https://media.radissonhotels.net/image/the-art-of-weddings/promotional/16256-176129-f83176837_3XL.jpg?impolicy=Card"
+                class="rounded-lg" alt=""></div>
+        <div class="flex flex-col justify-center mx-8 w-[45%]">
+            <h2 class="text-4xl my-4"> The Wedding Season is here</h2>
+            <p class="py-3">Your wedding is the start of forever. Will it be a vibrant city celebration or a destination
+                affair? Find the perfect setting for your love story with Radisson Hotels.</p>
+            <div class="py-3">
+
+                <button class="px-5 py-2 bg-red-700 text-white font-bold rounded-full ">EXPLORE NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#EEEEEF] pt-10 ">
+
+        <div class="flex justify-center">
+
+            <h2 class="text-4xl m-6">Our hotels brands</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-[15vw]">
+            <div class="brand">
+                <img src="https://statics.radissonhotels.com/main/img/logos/rdb.svg" class="brandImg" alt="">
+            </div>
+
+            <div class="brand">
+                <img src="https://statics.radissonhotels.com/main/img/logos/art.svg" class="company" alt="">
+            </div>
+            <div class="brand">
+
+                <img src="https://statics.radissonhotels.com/main/img/logos/ri.svg" class="company" alt="">
+            </div>
+            <div class="brand">
+                <img src="https://statics.radissonhotels.com/main/img/logos/rco.svg" class="company" alt="">
+            </div>
+            <div class="brand">
+                <img src="https://statics.radissonhotels.com/main/img/logos/pph.svg" class="h-[100%] w-[100%]" alt="">
+            </div>
+            <div class="brand">
+                <img src="https://statics.radissonhotels.com/main/img/logos/cis.svg" class="company" alt="">
+            </div>
+            <div class="brand">
+                <img src="https://statics.radissonhotels.com/main/img/logos/prz.svg" class="company" alt="">
+            </div>
+            <div class="brand">
+                <img src="https://statics.radissonhotels.com/main/img/logos/pii.svg" class="company" alt="">
+            </div>
+            <div class="brand">
+                <img src="https://statics.radissonhotels.com/main/img/logos/rad.svg" class="company" alt="">
+            </div>
+            <div class="brand">
+                <img src="https://statics.radissonhotels.com/main/img/logos/rdr.svg" class="h-[100%] w-[100%]" alt="">
+            </div>
+
+
+
+        </div>
+
+        <!-- Affilated Brand -->
+        <div class="flex justify-center mt-20">
+
+            <h2 class="text-4xl m-6">Our affilated brand in china</h2>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 mx-[15vw]">
+            <div class="brand">
+                <img src="https://statics.radissonhotels.com/main/img/logos/j.svg" class="brandImg" alt="">
+            </div>
+
+            <div class="brand">
+                <img src="https://statics.radissonhotels.com/main/img/logos/kl.svg" class="company" alt="">
+            </div>
+            <div class="brand">
+
+                <img src="https://statics.radissonhotels.com/main/img/logos/jj.svg" class="company" alt="">
+            </div>
+            <div class="brand">
+                <img src="https://statics.radissonhotels.com/main/img/logos/gt.svg" class="company" alt="">
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="bg-[#29343D] py-6 mt-10">
+            <div class="text-white px-[15vw]">
+                <h4 class="ml-1">Hot destinations</h4>
+                <div class="my-4">
+                    <button class="footerDesBtn">Amsterdam</button>
+                    <button class="footerDesBtn">Bangkok</button>
+                    <button class="footerDesBtn">Bengaluru</button>
+                    <button class="footerDesBtn">Berlin</button>
+                    <button class="footerDesBtn">Budapest</button>
+                    <button class="footerDesBtn">Copenhagen</button>
+                    <button class="footerDesBtn">Dubai</button>
+                    <button class="footerDesBtn">Dublin</button>
+                    <button class="footerDesBtn">Gran Canaria</button>
+                    <button class="footerDesBtn">Istanbul</button>
+                    <button class="footerDesBtn">London</button>
+                    <button class="footerDesBtn">Manchester</button>
+                    <button class="footerDesBtn">Milan</button>
+                    <button class="footerDesBtn">New Delhi</button>
+                    <button class="footerDesBtn">Oslo</button>
+                    <button class="footerDesBtn">Paris</button>
+                    <button class="footerDesBtn">Riga</button>
+                    <button class="footerDesBtn">Shanghai</button>
+                    <button class="footerDesBtn">Stockholm</button>
+                    <button class="footerDesBtn">Zurich</button>
+                </div>
+            </div>
+            <div></div>
+            <div class="px-[15vw] text-gray-600 text-sm border-t-1 border-gray-600 pt-5">
+                © 2026 Radisson Hotel Group. All rights reserved. RHG Radisson Hotel Group, Radisson, Radisson RED,
+                Radisson Blu, Radisson Collection, Radisson Individuals, Park Plaza, Park Inn, Country Inn & Suites,
+                Prize by Radisson, Radisson Rewards, and Radisson Meetings are trademarks of Radisson Hotel Group.
+            </div>
+        </footer>
+</body>
+
+</html>
