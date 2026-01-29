@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Snake game</title>
+    </head>
+    <body>
+        <div class="flex justify-center flex-col h-screen w-screen items-center">
+            <h1 class="text-red-600 font-bold text-5xl -mt-10">Nokia Snake</h1>
+            <h3 class="text-green-700 text-4xl my-4 ">Score : <span id="score"></span></h3>
+            <div id="gameBox" class="relative h-[600px] w-[600px] border-2 border-green-400  bg-gray-800 p-2"></div>
+            <button class="rounded-lg bg-green-600 px-5 py-3 text-white  text-2xl font-bold mt-3 border border-none" onclick="startGame()">Start</button>
+        </div>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
